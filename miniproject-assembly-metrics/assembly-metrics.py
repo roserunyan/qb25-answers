@@ -30,10 +30,6 @@ for contig in contig_len:
         break
 print("sequence length of the shortest contig at 50% of the total assembly length:", contig)
 
-# for contig in contig_len:
-#     if 
-
-
 
 
 
