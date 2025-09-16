@@ -1,0 +1,38 @@
+---
+title: "exercise2"
+output: html_document
+date: "2025-09-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Plotting Gene Density
+
+```{r}
+# Load Libraries
+library(tidyverse)
+```
+
+```{r}
+# Read in file
+setwd("~/qb25-answers/week1")
+header <- c("chr", "start", "end", "count")
+df_kc_19 <- read_tsv("hg19-kc-count.bed", col_names=header)
+df_kc_16 <- read_tsv("hg16-kc-count.bed", col_names=header)
+df_kc <- bind_rows( hg19=df_kc_19, hg16=df_kc_16, .id="assembly" )
+```
+
+```{r}
+# Make plot with ggplot
+ggplot(data = df_kc, aes(x=start, y=count, color=assembly)) +
+  geom_line() + 
+  facet_wrap(chr ~ ., scales="free")
+
+```
+
+```{r}
+# Save plot
+ggsave( "exercise2.png" )
+```
