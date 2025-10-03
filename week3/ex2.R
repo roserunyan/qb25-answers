@@ -15,12 +15,14 @@ ggplot(df_AF, aes(AF)) +
   ) +
   theme_minimal()
 
+ggsave("~/qb25-answers/week3/AF.png", width = 8, height = 4)
+
 # Question 2.1: The most common allele frequency is around 0.5, with it dropping to each end.
 # This means that for most variants, the alternative allele makes up half of the alleles in the population.
 # This is expected since these variants are from F1s that were produced from a cross between the reference 
 # strain and an alternative strain.
 
-### STEP2.3 ###
+### STEP 2.3 ###
 #Read in file
 df_DP <- read.table("DP.txt", header = FALSE, col.names= "DP")
 
@@ -34,6 +36,8 @@ ggplot(df_DP, aes(DP)) +
     y = " Number of Samples"
   ) +
   theme_minimal()
+
+ggsave("~/qb25-answers/week3/DP.png", width = 8, height = 4)
 
 # Question 2.2: This represents how many samples had each number of reads.
 # Most of the samples have a depth of around 2-5 and this makes sense because the recombinants
