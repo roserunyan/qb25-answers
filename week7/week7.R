@@ -74,3 +74,37 @@ ggplot(pca_summary, aes(x=PC, y=norm_var)) +
 
 # Save this plot to turn in.
 ggsave("~/qb25-answers/week7/ex1.3_scree.png")
+
+### Exercise 2: K-means clustering ###
+# Step 2.1: Averaging and filtering genes by variance
+combined = read_matrix[,seq(1, 21, 3)]
+combined = combined + read_matrix[,seq(2, 21, 3)]
+combined = combined + read_matrix[,seq(3, 21, 3)]
+combined = combined / 3
+
+# find the standard deviation for each replicate-averaged gene (row)
+stdev_combined <- rowSds(combined)
+# keep only genes with a standard deviation greater than 1. 
+filtered_matrix <- read_matrix[stdev_combined > 1, , drop = FALSE]
+
+# Step 2.2: K-means clustering genes
+# set seed to 42
+set.seed(42)
+
+# cluster. set best result out of 100 random starting configs
+nstart=100
+kmeans_results <- kmeans(as.matrix(filtered_matrix), centers=12, nstart=100)
+# To get the cluster labels from the cluster object returned by kmeans, use $cluster
+gene_clusters <- kmeans_results$cluster
+# Using the cluster labels, sort the rows of your gene-filtered data matrix
+ordered_genes <- order(gene_clusters)
+sorted_matrix <- filtered_matrix[ordered_genes, , drop = FALSE]
+# then the cluster labels themselves
+sorted_clusters <- gene_clusters[ordered_genes]
+
+# visualize clusters by plotting on heatmap, using labels to color each cluster
+heatmap(sorted_matrix, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[gene_clusters], ylab="Gene")  
+
+ggsave("~/qb25-answers/week7/ex2.2.png")
+
+
