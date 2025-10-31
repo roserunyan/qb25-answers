@@ -1,0 +1,86 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.16423886 Released 2025-07-22
+Analyzed List:	upload_1 (Drosophila melanogaster)
+Reference List:	Drosophila melanogaster (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Drosophila melanogaster - REFLIST (13821)	upload_1 (103)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+regulation of systemic arterial blood pressure by circulatory renin-angiotensin (GO:0001991)	3	3	.02	+	 > 100	4.02E-07	4.16E-04
+regulation of systemic arterial blood pressure by hormone (GO:0001990)	3	3	.02	+	 > 100	4.02E-07	3.64E-04
+angiotensin maturation (GO:0002003)	3	3	.02	+	 > 100	4.02E-07	3.24E-04
+regulation of angiotensin levels in blood (GO:0002002)	3	3	.02	+	 > 100	4.02E-07	2.91E-04
+ethanol metabolic process (GO:0006067)	2	2	.01	+	 > 100	5.50E-05	9.06E-03
+regulation of blood pressure (GO:0008217)	3	3	.02	+	 > 100	4.02E-07	2.65E-04
+endocrine process (GO:0050886)	3	3	.02	+	 > 100	4.02E-07	2.43E-04
+regulation of systemic arterial blood pressure by renin-angiotensin (GO:0003081)	3	3	.02	+	 > 100	4.02E-07	2.24E-04
+regulation of systemic arterial blood pressure (GO:0003073)	3	3	.02	+	 > 100	4.02E-07	2.08E-04
+regulation of systemic arterial blood pressure mediated by a chemical signal (GO:0003044)	3	3	.02	+	 > 100	4.02E-07	1.94E-04
+blood circulation (GO:0008015)	9	3	.07	+	44.73	3.27E-05	5.78E-03
+mannose metabolic process (GO:0006013)	11	3	.08	+	36.60	6.35E-05	9.59E-03
+peptide hormone processing (GO:0016486)	15	4	.11	+	35.78	3.73E-06	1.08E-03
+signaling receptor ligand precursor processing (GO:0140448)	16	4	.12	+	33.55	4.94E-06	1.33E-03
+peptide catabolic process (GO:0043171)	17	4	.13	+	31.57	6.43E-06	1.66E-03
+peptide metabolic process (GO:0006518)	29	4	.22	+	18.51	5.99E-05	9.65E-03
+fatty acid oxidation (GO:0019395)	37	5	.28	+	18.13	7.52E-06	1.88E-03
+lipid oxidation (GO:0034440)	38	5	.28	+	17.66	8.61E-06	2.01E-03
+fatty acid beta-oxidation (GO:0006635)	34	4	.25	+	15.79	1.14E-04	1.53E-02
+fatty acid catabolic process (GO:0009062)	48	5	.36	+	13.98	2.77E-05	5.02E-03
+lipid transport (GO:0006869)	113	10	.84	+	11.87	1.11E-08	4.04E-05
+lipid localization (GO:0010876)	113	10	.84	+	11.87	1.11E-08	2.69E-05
+monocarboxylic acid catabolic process (GO:0072329)	59	5	.44	+	11.37	7.58E-05	1.12E-02
+lipid modification (GO:0030258)	71	5	.53	+	9.45	1.84E-04	2.30E-02
+hormone metabolic process (GO:0042445)	82	5	.61	+	8.18	3.61E-04	3.74E-02
+lipid catabolic process (GO:0016042)	160	9	1.19	+	7.55	2.96E-06	9.32E-04
+fatty acid metabolic process (GO:0006631)	143	8	1.07	+	7.51	1.12E-05	2.32E-03
+organic acid catabolic process (GO:0016054)	120	6	.89	+	6.71	2.72E-04	3.13E-02
+carboxylic acid catabolic process (GO:0046395)	120	6	.89	+	6.71	2.72E-04	3.08E-02
+monocarboxylic acid metabolic process (GO:0032787)	201	10	1.50	+	6.68	2.47E-06	9.93E-04
+small molecule catabolic process (GO:0044282)	195	9	1.45	+	6.19	1.47E-05	2.74E-03
+carbohydrate metabolic process (GO:0005975)	232	10	1.73	+	5.78	8.82E-06	2.00E-03
+organic anion transport (GO:0015711)	163	7	1.21	+	5.76	2.14E-04	2.63E-02
+chemical homeostasis (GO:0048878)	283	11	2.11	+	5.22	8.21E-06	1.98E-03
+carboxylic acid metabolic process (GO:0019752)	348	12	2.59	+	4.63	1.05E-05	2.31E-03
+oxoacid metabolic process (GO:0043436)	349	12	2.60	+	4.61	1.08E-05	2.31E-03
+organic acid metabolic process (GO:0006082)	352	12	2.62	+	4.57	1.18E-05	2.31E-03
+lipid metabolic process (GO:0006629)	557	17	4.15	+	4.10	7.01E-07	3.18E-04
+small molecule metabolic process (GO:0044281)	755	22	5.63	+	3.91	2.80E-08	5.07E-05
+catabolic process (GO:0009056)	1014	22	7.56	+	2.91	4.31E-06	1.20E-03
+transmembrane transport (GO:0055085)	968	19	7.21	+	2.63	8.52E-05	1.24E-02
+metabolic process (GO:0008152)	4386	53	32.69	+	1.62	4.16E-05	7.18E-03
+primary metabolic process (GO:0044238)	3819	46	28.46	+	1.62	2.23E-04	2.69E-02
+biological regulation (GO:0065007)	4484	15	33.42	-	.45	4.80E-05	8.09E-03
+cellular component organization (GO:0016043)	2790	7	20.79	-	.34	2.86E-04	3.19E-02
+cellular component organization or biogenesis (GO:0071840)	2966	7	22.10	-	.32	8.86E-05	1.26E-02
+regulation of biological process (GO:0050789)	4225	9	31.49	-	.29	1.35E-07	1.96E-04
+multicellular organism development (GO:0007275)	2148	4	16.01	-	.25	3.10E-04	3.41E-02
+anatomical structure development (GO:0048856)	2609	4	19.44	-	.21	1.13E-05	2.27E-03
+developmental process (GO:0032502)	2761	4	20.58	-	.19	3.05E-06	9.21E-04
+regulation of cellular process (GO:0050794)	4011	5	29.89	-	.17	1.01E-09	7.34E-06
+regulation of primary metabolic process (GO:0080090)	1694	2	12.62	-	.16	3.80E-04	3.88E-02
+regulation of metabolic process (GO:0019222)	2108	2	15.71	-	.13	1.23E-05	2.34E-03
+signaling (GO:0023052)	1392	1	10.37	-	.10	4.07E-04	4.09E-02
+cell communication (GO:0007154)	1406	1	10.48	-	.10	4.15E-04	4.12E-02
+system development (GO:0048731)	1417	1	10.56	-	.09	4.26E-04	4.18E-02
+negative regulation of cellular process (GO:0048523)	1446	1	10.78	-	.09	2.68E-04	3.13E-02
+anatomical structure morphogenesis (GO:0009653)	1507	1	11.23	-	.09	1.77E-04	2.25E-02
+organelle organization (GO:0006996)	1572	1	11.72	-	.09	1.18E-04	1.55E-02
+regulation of macromolecule metabolic process (GO:0060255)	1942	0	14.47	-	 < 0.01	2.32E-07	2.80E-04
+regulation of nucleobase-containing compound metabolic process (GO:0019219)	1319	0	9.83	-	 < 0.01	6.01E-05	9.47E-03
+signal transduction (GO:0007165)	1225	0	9.13	-	 < 0.01	1.49E-04	1.93E-02
+regulation of RNA biosynthetic process (GO:2001141)	1103	0	8.22	-	 < 0.01	3.44E-04	3.67E-02
+regulation of DNA-templated transcription (GO:0006355)	1103	0	8.22	-	 < 0.01	3.44E-04	3.62E-02
+cellular developmental process (GO:0048869)	1676	0	12.49	-	 < 0.01	2.47E-06	9.42E-04
+cellular component assembly (GO:0022607)	1088	0	8.11	-	 < 0.01	3.41E-04	3.69E-02
+cell differentiation (GO:0030154)	1675	0	12.48	-	 < 0.01	2.47E-06	8.95E-04
+regulation of macromolecule biosynthetic process (GO:0010556)	1708	0	12.73	-	 < 0.01	2.55E-06	8.41E-04
+regulation of gene expression (GO:0010468)	1692	0	12.61	-	 < 0.01	2.48E-06	8.55E-04
+regulation of biosynthetic process (GO:0009889)	1749	0	13.03	-	 < 0.01	1.55E-06	6.63E-04
+animal organ development (GO:0048513)	1180	0	8.79	-	 < 0.01	2.37E-04	2.81E-02
+regulation of RNA metabolic process (GO:0051252)	1254	0	9.35	-	 < 0.01	9.23E-05	1.29E-02
+cell development (GO:0048468)	1339	0	9.98	-	 < 0.01	6.33E-05	9.76E-03
+cellular component biogenesis (GO:0044085)	1285	0	9.58	-	 < 0.01	9.82E-05	1.34E-02

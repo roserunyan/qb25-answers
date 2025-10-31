@@ -92,7 +92,6 @@ filtered_matrix <- read_matrix[stdev_combined > 1, , drop = FALSE]
 set.seed(42)
 
 # cluster. set best result out of 100 random starting configs
-nstart=100
 kmeans_results <- kmeans(as.matrix(filtered_matrix), centers=12, nstart=100)
 # To get the cluster labels from the cluster object returned by kmeans, use $cluster
 gene_clusters <- kmeans_results$cluster
@@ -104,7 +103,16 @@ sorted_clusters <- gene_clusters[ordered_genes]
 
 # visualize clusters by plotting on heatmap, using labels to color each cluster
 heatmap(sorted_matrix, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[gene_clusters], ylab="Gene")  
-
+clu
 ggsave("~/qb25-answers/week7/ex2.2.png")
+
+### Exercise 3: Gene ontology enrichment analysis ###
+# Select two clusters to investigate
+# For each, get the gene names using rownames, filtering for only genes within the cluster you have selected.
+cluster2 <- rownames(filtered_matrix)[gene_clusters == 2]
+cluster12 <- rownames(filtered_matrix)[gene_clusters == 12]
+
+
+
 
 
