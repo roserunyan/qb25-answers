@@ -7,3 +7,8 @@ What does the PCA plot suggest to you about the data? Why?
 What feature explains the first principal component (simply saying “tissue” is not sufficient)?
 - The first PC shows the largest variation in the data, which is the variation in gene expression between tissue types.
 
+## Exercise 3
+Do the categories of enrichments make sense? Why?
+- Yes, the categories make sense. They have to do with metabolic pathways and hexose trans-membrane transport, which both happen in the gut.
+
+
