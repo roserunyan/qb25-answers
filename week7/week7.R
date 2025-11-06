@@ -57,7 +57,7 @@ ggsave("~/qb25-answers/week7/ex1.3.png")
 norm_top_genes <- scale(top500_genes_t)
 pca_results_norm <- prcomp(norm_top_genes)
 
-pca_data_norm <- tibble(PC1=pca_norm$x[,1], PC2=pca_norm$x[,2], sample=sample) %>%
+pca_data_norm <- tibble(PC1=pca_results_norm$x[,1], PC2=pca_results_norm$x[,2], sample=sample) %>%
   separate(sample, into=c("tissue", "replicate"), sep="_") %>%
   mutate(replicate=as.factor(replicate))
 
@@ -102,9 +102,10 @@ sorted_matrix <- filtered_matrix[ordered_genes, , drop = FALSE]
 sorted_clusters <- gene_clusters[ordered_genes]
 
 # visualize clusters by plotting on heatmap, using labels to color each cluster
-heatmap(sorted_matrix, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[gene_clusters], ylab="Gene")  
-clu
-ggsave("~/qb25-answers/week7/ex2.2.png")
+# found how to save on stack overflow: https://stackoverflow.com/questions/16925261/how-to-save-a-graphic-in-r-instead-of-visualizing-it
+png(file="~/qb25-answers/week7/ex2.2.png")
+heatmap(sorted_matrix, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[gene_clusters], ylab="Gene")
+dev.off()
 
 ### Exercise 3: Gene ontology enrichment analysis ###
 # Select two clusters to investigate
