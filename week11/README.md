@@ -23,7 +23,11 @@
 - This fits almost exactly
 
 ## Step 2.4
+```dot -Tpng debruijn.dot -o ex2_digraph.png```
 
 ## Step 2.5
-
+1. Assume that the maximum number of occurrences of any 3-mer in the actual genome is five. Using your graph from Step 2.4, write one possible genome sequence that would produce these reads.
+- 
 ## Step 2.6
+1. what would it take to accurately reconstruct the sequence of the genome?
+- We would need high coverage reads to be very accurate, as well as longer reads. Since we can see that multiple paths can lead to the same reads, we need this higher coverage and longer reads to make the path more clear.
