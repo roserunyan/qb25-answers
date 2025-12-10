@@ -8,7 +8,7 @@ from scipy.stats import poisson, norm
 # set variables
 genomesize = 1000000
 readlength = 100
-coverage = 3
+coverage = 10
 
 num_reads = int(genomesize * coverage / readlength)
 
@@ -35,6 +35,6 @@ stddev = math.sqrt(coverage)
 normal_estimates = norm.pdf(xs, loc=coverage, scale=stddev)
 
 # Save the coverage to a text file
-with open("coverage.txt", "w") as f:
+with open("coverage10.txt", "w") as f:
     for cov in genomecoverage:
         f.write(f"{cov}\n")
